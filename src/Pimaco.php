@@ -2,7 +2,7 @@
 
 namespace Proner\PhpPimaco;
 
-use mPDF;
+use Mpdf\Mpdf;
 
 class Pimaco
 {
@@ -38,7 +38,7 @@ class Pimaco
 
         $this->tags = new \ArrayObject();
 
-        $this->pdf = new mPDF(
+        $this->pdf = new Mpdf(
             'utf-8',
             array($this->width,$this->height),
             $this->fontSize,
